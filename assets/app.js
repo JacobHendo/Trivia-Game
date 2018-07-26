@@ -15,18 +15,13 @@ $(document).ready(function () {
 
         $("#quiz").show();
         timerGo = setInterval(decrement, 1000);
-        console.log("Game started");
-
-
     });
     function decrement() {
         gameTime--;
-        console.log("timer going");
         //function for user running out of time
 
         $("#timer").html("<h2>Time Remaining:  " + gameTime + "</h2>");
-        if (gameTime < 1) {
-            console.log("time's up!");
+        if (gameTime === 0) {
             clearInterval(timerGo);
             $("#timer").html("<h2>Time Remaining: " + gameTime + "</h2>");
             $("#quiz").hide();
@@ -40,7 +35,7 @@ $(document).ready(function () {
         $("#quiz").hide();
         $("#results-div").show();
         gameResults();
-        console.log("user done");
+        
     });
     // an array of the answers
     function gameResults() {
@@ -80,41 +75,41 @@ $(document).ready(function () {
         // results for question 3
         if ("correct" === answer3) {
             correctAnswers++;
-            console.log("#2 is correct");
+            console.log("#3 is correct");
         }
         else if ("incorrect" === answer3) {
             incorrectAnswers++;
-            console.log("#2 is incorrect");
+            console.log("#3 is incorrect");
         }
         else if (undefined === answer3) {
             unAnswered++;
-            console.log("#2 is unanswered");
+            console.log("#3 is unanswered");
         }
         // results for question 4
         if ("correct" === answer4) {
             correctAnswers++;
-            console.log("#2 is correct");
+            console.log("#4 is correct");
         }
         else if ("incorrect" === answer4) {
             incorrectAnswers++;
-            console.log("#2 is incorrect");
+            console.log("#4 is incorrect");
         }
         else if (undefined === answer4) {
             unAnswered++;
-            console.log("#2 is unanswered");
+            console.log("#4 is unanswered");
         }
         // results for question 5
         if ("correct" === answer5) {
             correctAnswers++;
-            console.log("#2 is correct");
+            console.log("#5 is correct");
         }
         else if ("incorrect" === answer5) {
             incorrectAnswers++;
-            console.log("#2 is incorrect");
+            console.log("#5 is incorrect");
         }
         else if (undefined === answer5) {
             unAnswered++;
-            console.log("#2 is unanswered");
+            console.log("#5 is unanswered");
         }
     }
-}
+})
