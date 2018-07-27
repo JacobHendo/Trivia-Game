@@ -21,21 +21,22 @@
 </head>
 
 <body>
-    <div class="jumbotron">
+    <!-- Main Heading and Game instructions-->
+    <div class="p-3 mb-2 bg-danger text-white">
         <div class="container">
             <h1 class="display-4">Switzerland Trivia Game</h1>
-            <p class="lead">How much do you think you know about the small but TaLLEST country in Europe?</p>
-            <p class="lead"> Now this is a timed Game! You have 60 seconds to answer 5 questions, and hit stop button before the timer runs
+            <p class="lead">How much do you think you know about the small but tallest country in Europe?</p>
+            <p class="lead"> Now this is a timed Game! You have 30 seconds to answer 5 questions, and hit stop button before the timer runs
                 out
             </p>
         </div>
     </div>
+
     <!-- The buttons for starting, stoping & resting the game timer and questions-->
     <div id="container">
         <!--Start Button-->
         <a class="btn btn-light btn-md" id="start-game" role="button">Start Here</a>
-        <!--Stop Timer Button-->
-        <a class="btn btn-dark btn-md" id="stop-game" role="button">Stop Timer</a>
+
     </div>
     <div class="container">
         <div class="row" id="timer-div">
@@ -43,69 +44,122 @@
             <!-- The Trivia Questions -->
             <div class="row" id="game-div">
                 <div class="col-12" id="quiz">
+
+
                     <!-- Question #1-->
-                    <h4>1. "What is that biggest Mountain in Switzerland?</h4>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4>1. "What is that biggest Mountain in Switzerland?</h4>
 
-                    <input type="radio" name="q-1" value=incorrect>Dom
-                    <input type="radio" name="q-1" value=incorrect>Lyskamm
-                    <!-- CORRECT ANSWER BELOW -->
-                    <input type="radio" name="q-1" value=correct>Monta Rosa
-                    <input type="radio" name="q-1" value=incorrect>Matterhorn
-                    <br>
+                            <input type="radio" name="q-1" value=incorrect>Dom
+                            <br>
+                            <input type="radio" name="q-1" value=incorrect>Lyskamm
+                            <br>
+                            <!-- CORRECT ANSWER BELOW -->
+                            <input type="radio" name="q-1" value=correct>Monta Rosa
+                            <br>
+                            <input type="radio" name="q-1" value=incorrect>Matterhorn
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+
                     <!-- Question #2-->
-                    <h4>2. Which of the following is the largest Lake in Switzerland?</h4>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4>2. Which of the following is the largest Lake in Switzerland?</h4>
 
-                    <input type="radio" name="q-2" value=incorrect>Lake Whales
-                    <input type="radio" name="q-2" value=incorrect>Lake Matas
-                    <input type="radio" name="q-2" value=incorrect>Lake Geneva
-                    <!-- CORRECT ANSWER BELOW -->
-                    <input type="radio" name="q-2" value=correct>Lake Tolsa
-                    <br>
+                            <input type="radio" name="q-2" value=incorrect>Lake Whales
+                            <br>
+                            <input type="radio" name="q-2" value=incorrect>Lake Matas
+                            <br>
+                            <input type="radio" name="q-2" value=incorrect>Lake Lotas
+                            <br>
+                            <!-- CORRECT ANSWER BELOW -->
+                            <input type="radio" name="q-2" value=correct>Lake Geneva
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+
+
                     <!-- Question #3-->
-                    <h4>3. Who many Miles east to west is Switzerland?</h4>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4>3. Who many Miles east to west is Switzerland?</h4>
 
-                    <input type="radio" name="q-2" value=incorrect>1020
-                    <!-- CORRECT ANSWER BELOW -->
-                    <input type="radio" name="q-2" value=correct>220
-                    <input type="radio" name="q-2" value=incorrect>305
-                    <input type="radio" name="q-2" value=incorrect>580
-                    <br>
+                            <input type="radio" name="q-3" value=incorrect>1020
+                            <br>
+                            <!-- CORRECT ANSWER BELOW -->
+                            <input type="radio" name="q-3" value=correct>220
+                            <br>
+                            <input type="radio" name="q-3" value=incorrect>305
+                            <br>
+                            <input type="radio" name="q-3" value=incorrect>580
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+
+
                     <!-- Question #4-->
-                    <h4>4. What currency is used in Switzerland?</h4>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4>4. What currency is used in Switzerland?</h4>
 
-                    <input type="radio" name="q-2" value=incorrect>Euro
-                    <!-- CORRECT ANSWER BELOW -->
-                    <input type="radio" name="q-2" value=correct>Franc
-                    <input type="radio" name="q-2" value=incorrect>Pound
-                    <input type="radio" name="q-2" value=incorrect>Yen
-                    <br>
+                            <input type="radio" name="q-4" value=incorrect>Euro
+                            <br>
+                            <!-- CORRECT ANSWER BELOW -->
+                            <input type="radio" name="q-4" value=correct>Franc
+                            <br>
+                            <input type="radio" name="q-4" value=incorrect>Pound
+                            <br>
+                            <input type="radio" name="q-4" value=incorrect>Yen
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+
 
                     <!-- Question #5-->
-                    <h4>4. What are the colors on the Switzerland flag?</h4>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4>5. What are the colors on the Switzerland flag?</h4>
 
-                    <input type="radio" name="q-2" value=incorrect>Red and blue
-                    <!-- CORRECT ANSWER BELOW -->
-                    <input type="radio" name="q-2" value=correct>Red and white
-                    <input type="radio" name="q-2" value=incorrect>Green and Orange
-                    <input type="radio" name="q-2" value=incorrect>White and Yellow
-                    <br>
+                            <input type="radio" name="q-5" value=incorrect>Red and blue
+                            <br>
+                            <!-- CORRECT ANSWER BELOW -->
+                            <input type="radio" name="q-5" value=correct>Red and white
+                            <br>
+                            <input type="radio" name="q-5" value=incorrect>Green and Orange
+                            <br>
+                            <input type="radio" name="q-5" value=incorrect>White and Yellow
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                    <!--Stop Timer Button-->
+                    <a class="btn btn-light btn-md" id="stop-game" role="button">Stop Timer</a>
+
                 </div>
 
             </div>
         </div>
-        <div class="row" id="results-div">
-                <div class="col-6" id="results">
-                    <h4>How You Did:</h4>
-                    <h5 id="total-correct"></h5>
-                    <h5 id="total-incorrect"></h5>
-                    <h5 id="total-unanswered"></h5>
-                </div>
+
+        <div id resultBoard = class="row" id="results-div">
+            <div class="col-" id="results">
+                <h4>How You Did:</h4>
+                <h5 id="total-correct"></h5>
+                <h5 id="total-incorrect"></h5>
+                <h5 id="total-unanswered"></h5>
             </div>
+        </div>
 
 
 
 
         <script src="assets/app.js"></script>
+        <footer>Copyright 2018 by Jacob Henderson</footer>
 </body>
 
 </html>

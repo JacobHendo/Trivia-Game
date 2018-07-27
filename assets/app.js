@@ -1,4 +1,4 @@
-var gameTime = 60;
+var gameTime = 30;
 var correctAnswers = 0;
 var unAnswered = 0;
 var incorrectAnswers = 0;
@@ -9,13 +9,14 @@ $(document).ready(function () {
     $("#quiz").hide();
     //hide quiz results/done page
     $("#results-div").hide();
+    
     //click start button to begin the game and timer
-
     $("#start-game").on("click", function () {
-
         $("#quiz").show();
         timerGo = setInterval(decrement, 1000);
+        clearInterval(intervalId);
     });
+
     function decrement() {
         gameTime--;
         //function for user running out of time
@@ -30,7 +31,7 @@ $(document).ready(function () {
         };
     }
     //function for user pressing done button prior to end of timer
-    $("#done").on("click", function () {
+    $("#stop-game").on("click", function () {
         clearInterval(timerGo);
         $("#quiz").hide();
         $("#results-div").show();
@@ -111,5 +112,14 @@ $(document).ready(function () {
             unAnswered++;
             console.log("#5 is unanswered");
         }
+        //correct
+        $("#total-correct").html("<h5>You got " + correctAnswers + " correct!");
+        //incorrect
+        $("#total-incorrect").html("<h5>You got " + incorrectAnswers + " wrong!");
+        // unanswered
+        $("#total-unanswered").html("<h5>You did not answer " + unAnswered + " questions!");
+
+
+
     }
 })
